@@ -107,43 +107,6 @@ export interface AdminApiTokenPermission extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface AdminAuditLog extends Struct.CollectionTypeSchema {
-  collectionName: 'strapi_audit_logs';
-  info: {
-    displayName: 'Audit Log';
-    pluralName: 'audit-logs';
-    singularName: 'audit-log';
-  };
-  options: {
-    draftAndPublish: false;
-    timestamps: false;
-  };
-  pluginOptions: {
-    'content-manager': {
-      visible: false;
-    };
-    'content-type-builder': {
-      visible: false;
-    };
-  };
-  attributes: {
-    action: Schema.Attribute.String & Schema.Attribute.Required;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    date: Schema.Attribute.DateTime & Schema.Attribute.Required;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'admin::audit-log'> &
-      Schema.Attribute.Private;
-    payload: Schema.Attribute.JSON;
-    publishedAt: Schema.Attribute.DateTime;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    user: Schema.Attribute.Relation<'oneToOne', 'admin::user'>;
-  };
-}
-
 export interface AdminPermission extends Struct.CollectionTypeSchema {
   collectionName: 'admin_permissions';
   info: {
@@ -467,6 +430,50 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAboutUsAboutUs extends Struct.SingleTypeSchema {
+  collectionName: 'about_uses';
+  info: {
+    displayName: 'about_us';
+    pluralName: 'about-uses';
+    singularName: 'about-us';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    A_Legacy_of_Transformation: Schema.Attribute.Component<
+      'a-legacy-of-transformation.a-legacy-of-transformation',
+      false
+    >;
+    banner: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    empowering_text: Schema.Attribute.Component<
+      'title-subtile.title-subtitle',
+      true
+    >;
+    hero_section: Schema.Attribute.Component<'section.hero', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::about-us.about-us'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    short_about: Schema.Attribute.Component<
+      'title-subtile.title-subtitle',
+      true
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
   collectionName: 'blogs';
   info: {
@@ -491,6 +498,417 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiBusinessInformationBusinessInformation
+  extends Struct.SingleTypeSchema {
+  collectionName: 'business_informations';
+  info: {
+    displayName: 'business transformation';
+    pluralName: 'business-informations';
+    singularName: 'business-information';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    Core_Transformation_Pillars: Schema.Attribute.Component<
+      'pillar.pillar',
+      false
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    hero_section: Schema.Attribute.Component<'section.hero', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::business-information.business-information'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiDataAnalyticsCloudAiDataAnalyticsCloudAi
+  extends Struct.SingleTypeSchema {
+  collectionName: 'data_analytics_cloud_ais';
+  info: {
+    displayName: 'data-analytics-cloud-ai';
+    pluralName: 'data-analytics-cloud-ais';
+    singularName: 'data-analytics-cloud-ai';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    hero_section: Schema.Attribute.Component<'section.hero', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::data-analytics-cloud-ai.data-analytics-cloud-ai'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Technical_Pillars: Schema.Attribute.Component<
+      'progress-section.progress-section',
+      false
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiDigitalInfraOpDigitalInfraOp
+  extends Struct.SingleTypeSchema {
+  collectionName: 'digital_infra_ops';
+  info: {
+    displayName: 'digital-infra-op';
+    pluralName: 'digital-infra-ops';
+    singularName: 'digital-infra-op';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Framework: Schema.Attribute.Component<
+      'progress-section.progress-section',
+      true
+    >;
+    hero_section: Schema.Attribute.Component<'section.hero', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::digital-infra-op.digital-infra-op'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHomePageHomePage extends Struct.CollectionTypeSchema {
+  collectionName: 'home_pages';
+  info: {
+    displayName: 'Home page';
+    pluralName: 'home-pages';
+    singularName: 'home-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::home-page.home-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHomeHome extends Struct.SingleTypeSchema {
+  collectionName: 'homes';
+  info: {
+    displayName: 'Home';
+    pluralName: 'homes';
+    singularName: 'home';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    hero: Schema.Attribute.Component<'section.hero', false>;
+    impact_count: Schema.Attribute.Component<'impact-count.impact-no', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiInnovationInnovation extends Struct.SingleTypeSchema {
+  collectionName: 'innovations';
+  info: {
+    displayName: 'innovation';
+    pluralName: 'innovations';
+    singularName: 'innovation';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    Concept_to_Reality: Schema.Attribute.Component<
+      'progress-section.progress-section',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    hero_section: Schema.Attribute.Component<'section.hero', true>;
+    innovation: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::innovation.innovation'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Toolkit: Schema.Attribute.Component<'pillar.pillar', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiOperativeManagementOperativeManagement
+  extends Struct.SingleTypeSchema {
+  collectionName: 'operative_managements';
+  info: {
+    displayName: 'operative-management';
+    pluralName: 'operative-managements';
+    singularName: 'operative-management';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Global_Efficiency: Schema.Attribute.Component<'pillar.pillar', true>;
+    hero_section: Schema.Attribute.Component<'section.hero', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::operative-management.operative-management'
+    > &
+      Schema.Attribute.Private;
+    Managed_Services: Schema.Attribute.Component<
+      'progress-section.progress-section',
+      true
+    >;
+    operative_management_info: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    title_subtile: Schema.Attribute.Component<
+      'title-subtile.title-subtitle',
+      true
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPlatformProductEngineeringPlatformProductEngineering
+  extends Struct.SingleTypeSchema {
+  collectionName: 'platform_product_engineerings';
+  info: {
+    displayName: 'platform-product-engineering';
+    pluralName: 'platform-product-engineerings';
+    singularName: 'platform-product-engineering';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    hero_section: Schema.Attribute.Component<'section.hero', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::platform-product-engineering.platform-product-engineering'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Strategic_Excellence: Schema.Attribute.Component<'pillar.pillar', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiStrategicConsultingStrategicConsulting
+  extends Struct.SingleTypeSchema {
+  collectionName: 'strategic_consultings';
+  info: {
+    displayName: 'strategic-consulting';
+    pluralName: 'strategic-consultings';
+    singularName: 'strategic-consulting';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    hero_section: Schema.Attribute.Component<'section.hero', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::strategic-consulting.strategic-consulting'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Strategic_Excellence: Schema.Attribute.Component<'pillar.pillar', false>;
+    Strategic_info: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTotalTalentSolutionTotalTalentSolution
+  extends Struct.SingleTypeSchema {
+  collectionName: 'total_talent_solutions';
+  info: {
+    displayName: 'Total _talent_solution';
+    pluralName: 'total-talent-solutions';
+    singularName: 'total-talent-solution';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      false
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    hero_section: Schema.Attribute.Component<'section.hero', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::total-talent-solution.total-talent-solution'
+    > &
+      Schema.Attribute.Private;
+    MBS_Lifecycle: Schema.Attribute.Component<'pillar.pillar', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    talent_progess: Schema.Attribute.Component<
+      'progress-section.progress-section',
+      false
+    >;
+    total_talent_info: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiWorkspaceSolutionWorkspaceSolution
+  extends Struct.SingleTypeSchema {
+  collectionName: 'workspace_solutions';
+  info: {
+    displayName: 'Workspace_solution';
+    pluralName: 'workspace-solutions';
+    singularName: 'workspace-solution';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      false
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    hero_section: Schema.Attribute.Component<'section.hero', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::workspace-solution.workspace-solution'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title_subtile: Schema.Attribute.Component<
+      'title-subtile.title-subtitle',
+      true
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Workspaces_info: Schema.Attribute.Component<
+      'title-subtile-button-image.title-subtitle-button-image',
+      true
+    >;
+    Workspaces_pillar: Schema.Attribute.Component<'pillar.pillar', false>;
   };
 }
 
@@ -999,14 +1417,25 @@ declare module '@strapi/strapi' {
     export interface ContentTypeSchemas {
       'admin::api-token': AdminApiToken;
       'admin::api-token-permission': AdminApiTokenPermission;
-      'admin::audit-log': AdminAuditLog;
       'admin::permission': AdminPermission;
       'admin::role': AdminRole;
       'admin::session': AdminSession;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::about-us.about-us': ApiAboutUsAboutUs;
       'api::blog.blog': ApiBlogBlog;
+      'api::business-information.business-information': ApiBusinessInformationBusinessInformation;
+      'api::data-analytics-cloud-ai.data-analytics-cloud-ai': ApiDataAnalyticsCloudAiDataAnalyticsCloudAi;
+      'api::digital-infra-op.digital-infra-op': ApiDigitalInfraOpDigitalInfraOp;
+      'api::home-page.home-page': ApiHomePageHomePage;
+      'api::home.home': ApiHomeHome;
+      'api::innovation.innovation': ApiInnovationInnovation;
+      'api::operative-management.operative-management': ApiOperativeManagementOperativeManagement;
+      'api::platform-product-engineering.platform-product-engineering': ApiPlatformProductEngineeringPlatformProductEngineering;
+      'api::strategic-consulting.strategic-consulting': ApiStrategicConsultingStrategicConsulting;
+      'api::total-talent-solution.total-talent-solution': ApiTotalTalentSolutionTotalTalentSolution;
+      'api::workspace-solution.workspace-solution': ApiWorkspaceSolutionWorkspaceSolution;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

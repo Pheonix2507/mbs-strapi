@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "platform_product_engineerings",
+  "info": {
+    "singularName": "platform-product-engineering",
+    "pluralName": "platform-product-engineerings",
+    "displayName": "platform-product-engineering"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_section": {
+      "type": "component",
+      "component": "section.hero",
+      "repeatable": true
+    },
+    "Strategic_Excellence": {
+      "type": "component",
+      "component": "pillar.pillar",
+      "repeatable": true
+    },
+    "banner": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    }
+  }
+}

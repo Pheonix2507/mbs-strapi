@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_title_subtile_button_image_title_subtitle_button_images",
+  "info": {
+    "displayName": "title_subtitle_button_image"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "component": "cta-button.button",
+      "repeatable": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

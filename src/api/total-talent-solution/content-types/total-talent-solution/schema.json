@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "total_talent_solutions",
+  "info": {
+    "singularName": "total-talent-solution",
+    "pluralName": "total-talent-solutions",
+    "displayName": "Total _talent_solution"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_section": {
+      "type": "component",
+      "component": "section.hero",
+      "repeatable": true
+    },
+    "MBS_Lifecycle": {
+      "type": "component",
+      "component": "pillar.pillar",
+      "repeatable": false
+    },
+    "talent_progess": {
+      "type": "component",
+      "component": "progress-section.progress-section",
+      "repeatable": false
+    },
+    "banner": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": false
+    },
+    "total_talent_info": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    }
+  }
+}

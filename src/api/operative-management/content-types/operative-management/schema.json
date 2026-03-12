@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "operative_managements",
+  "info": {
+    "singularName": "operative-management",
+    "pluralName": "operative-managements",
+    "displayName": "operative-management"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_section": {
+      "type": "component",
+      "component": "section.hero",
+      "repeatable": true
+    },
+    "title_subtile": {
+      "type": "component",
+      "component": "title-subtile.title-subtitle",
+      "repeatable": true
+    },
+    "Global_Efficiency": {
+      "type": "component",
+      "component": "pillar.pillar",
+      "repeatable": true
+    },
+    "Managed_Services": {
+      "type": "component",
+      "component": "progress-section.progress-section",
+      "repeatable": true
+    },
+    "banner": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    },
+    "operative_management_info": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    }
+  }
+}

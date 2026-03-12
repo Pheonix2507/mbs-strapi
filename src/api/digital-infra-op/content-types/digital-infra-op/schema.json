@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "digital_infra_ops",
+  "info": {
+    "singularName": "digital-infra-op",
+    "pluralName": "digital-infra-ops",
+    "displayName": "digital-infra-op"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_section": {
+      "type": "component",
+      "component": "section.hero",
+      "repeatable": true
+    },
+    "banner": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    },
+    "Framework": {
+      "type": "component",
+      "component": "progress-section.progress-section",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "business_informations",
+  "info": {
+    "singularName": "business-information",
+    "pluralName": "business-informations",
+    "displayName": "business transformation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_section": {
+      "type": "component",
+      "component": "section.hero",
+      "repeatable": true
+    },
+    "Core_Transformation_Pillars": {
+      "type": "component",
+      "component": "pillar.pillar",
+      "repeatable": false
+    },
+    "banner": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    }
+  }
+}

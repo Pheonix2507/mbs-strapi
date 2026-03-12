@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "innovations",
+  "info": {
+    "singularName": "innovation",
+    "pluralName": "innovations",
+    "displayName": "innovation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_section": {
+      "type": "component",
+      "component": "section.hero",
+      "repeatable": true
+    },
+    "Toolkit": {
+      "type": "component",
+      "component": "pillar.pillar",
+      "repeatable": false
+    },
+    "Concept_to_Reality": {
+      "type": "component",
+      "component": "progress-section.progress-section",
+      "repeatable": true
+    },
+    "banner": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    },
+    "innovation": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    }
+  }
+}

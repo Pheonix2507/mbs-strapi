@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_title_subtile_title_subtitles",
+  "info": {
+    "displayName": "title_subtitle"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

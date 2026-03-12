@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_pillar_pillar_elemetns",
+  "info": {
+    "displayName": "pillar_elemetn"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title_subtile": {
+      "type": "component",
+      "component": "title-subtile.title-subtitle",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

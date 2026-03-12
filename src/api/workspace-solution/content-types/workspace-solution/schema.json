@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "workspace_solutions",
+  "info": {
+    "singularName": "workspace-solution",
+    "pluralName": "workspace-solutions",
+    "displayName": "Workspace_solution"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_section": {
+      "type": "component",
+      "component": "section.hero",
+      "repeatable": true
+    },
+    "title_subtile": {
+      "type": "component",
+      "component": "title-subtile.title-subtitle",
+      "repeatable": true
+    },
+    "Workspaces_pillar": {
+      "type": "component",
+      "component": "pillar.pillar",
+      "repeatable": false
+    },
+    "banner": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": false
+    },
+    "Workspaces_info": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    }
+  }
+}

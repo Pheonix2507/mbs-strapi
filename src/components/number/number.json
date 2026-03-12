@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_number_number_s",
+  "info": {
+    "displayName": "number "
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "about_us"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_section": {
+      "type": "component",
+      "component": "section.hero",
+      "repeatable": true
+    },
+    "A_Legacy_of_Transformation": {
+      "type": "component",
+      "component": "a-legacy-of-transformation.a-legacy-of-transformation",
+      "repeatable": false
+    },
+    "short_about": {
+      "type": "component",
+      "component": "title-subtile.title-subtitle",
+      "repeatable": true
+    },
+    "empowering_text": {
+      "type": "component",
+      "component": "title-subtile.title-subtitle",
+      "repeatable": true
+    },
+    "banner": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    }
+  }
+}

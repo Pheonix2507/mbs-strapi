@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_impact_count_impact_nos",
+  "info": {
+    "displayName": "Impact_no"
+  },
+  "options": {},
+  "attributes": {
+    "numbers": {
+      "type": "component",
+      "component": "number.number",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

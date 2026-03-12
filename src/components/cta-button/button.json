@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_cta_button_button_s",
+  "info": {
+    "displayName": "button "
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "contact_us": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog.blog"
+    },
+    "visible": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

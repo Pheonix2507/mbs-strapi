@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_progress_section_progress_sections",
+  "info": {
+    "displayName": "progress_section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "title_subtile_image": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

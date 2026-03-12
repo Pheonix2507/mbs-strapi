@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "data_analytics_cloud_ais",
+  "info": {
+    "singularName": "data-analytics-cloud-ai",
+    "pluralName": "data-analytics-cloud-ais",
+    "displayName": "data-analytics-cloud-ai"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_section": {
+      "type": "component",
+      "component": "section.hero",
+      "repeatable": true
+    },
+    "Technical_Pillars": {
+      "type": "component",
+      "component": "progress-section.progress-section",
+      "repeatable": false
+    },
+    "banner": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    }
+  }
+}

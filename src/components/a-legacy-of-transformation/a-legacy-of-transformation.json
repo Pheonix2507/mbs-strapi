@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_a_legacy_of_transformation_a_legacy_of_transformation_s",
+  "info": {
+    "displayName": "A Legacy of Transformation."
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "yearAndtext": {
+      "type": "component",
+      "component": "title-subtile.title-subtitle",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

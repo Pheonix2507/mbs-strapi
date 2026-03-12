@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_pillar_pillars",
+  "info": {
+    "displayName": "pillar"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "pillar_element": {
+      "type": "component",
+      "component": "pillar.pillar-elemetn",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

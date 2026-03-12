@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "strategic_consultings",
+  "info": {
+    "singularName": "strategic-consulting",
+    "pluralName": "strategic-consultings",
+    "displayName": "strategic-consulting"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_section": {
+      "type": "component",
+      "component": "section.hero",
+      "repeatable": true
+    },
+    "Strategic_Excellence": {
+      "type": "component",
+      "component": "pillar.pillar",
+      "repeatable": false
+    },
+    "banner": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    },
+    "Strategic_info": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": true
+    }
+  }
+}
