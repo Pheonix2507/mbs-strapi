@@ -445,10 +445,6 @@ export interface ApiAboutUsAboutUs extends Struct.SingleTypeSchema {
       'a-legacy-of-transformation.a-legacy-of-transformation',
       false
     >;
-    banner: Schema.Attribute.Component<
-      'title-subtile-button-image.title-subtitle-button-image',
-      true
-    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
