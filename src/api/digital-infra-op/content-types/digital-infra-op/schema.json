@@ -16,12 +16,7 @@
       "component": "section.hero",
       "repeatable": false
     },
-    "banner": {
-      "type": "component",
-      "component": "title-subtile-button-image.title-subtitle-button-image",
-      "repeatable": false
-    },
-    "Framework": {
+    "progress": {
       "type": "component",
       "component": "progress-section.progress-section",
       "repeatable": false
@@ -31,9 +26,14 @@
       "component": "strategic-business-outcomes.strategic-business-outcomes",
       "repeatable": false
     },
-    "tech_manage": {
+    "Result_section": {
       "type": "component",
       "component": "title-subtile.title-subtitle",
+      "repeatable": false
+    },
+    "banner": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
       "repeatable": false
     }
   }

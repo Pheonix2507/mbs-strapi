@@ -16,9 +16,9 @@
       "component": "section.hero",
       "repeatable": false
     },
-    "banner": {
+    "progress": {
       "type": "component",
-      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "component": "progress-section.progress-section",
       "repeatable": false
     },
     "Result_section": {
@@ -31,9 +31,9 @@
       "component": "number-growth.number-growth",
       "repeatable": true
     },
-    "Strategic_Excellences": {
+    "banner": {
       "type": "component",
-      "component": "progress-section.progress-section",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
       "repeatable": false
     }
   }

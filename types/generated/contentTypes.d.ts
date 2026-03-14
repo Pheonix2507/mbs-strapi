@@ -551,10 +551,6 @@ export interface ApiDataAnalyticsCloudAiDataAnalyticsCloudAi
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Engineering_the_Future: Schema.Attribute.Component<
-      'title-subtile.title-subtitle',
-      true
-    >;
     hero_section: Schema.Attribute.Component<'section.hero', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -562,11 +558,15 @@ export interface ApiDataAnalyticsCloudAiDataAnalyticsCloudAi
       'api::data-analytics-cloud-ai.data-analytics-cloud-ai'
     > &
       Schema.Attribute.Private;
-    Pillar: Schema.Attribute.Component<
+    progress: Schema.Attribute.Component<
       'progress-section.progress-section',
       false
     >;
     publishedAt: Schema.Attribute.DateTime;
+    Result_section: Schema.Attribute.Component<
+      'title-subtile.title-subtitle',
+      false
+    >;
     Strategic_Business_Outcomes: Schema.Attribute.Component<
       'strategic-business-outcomes.strategic-business-outcomes',
       false
@@ -596,10 +596,6 @@ export interface ApiDigitalInfraOpDigitalInfraOp
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Framework: Schema.Attribute.Component<
-      'progress-section.progress-section',
-      false
-    >;
     hero_section: Schema.Attribute.Component<'section.hero', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -607,13 +603,17 @@ export interface ApiDigitalInfraOpDigitalInfraOp
       'api::digital-infra-op.digital-infra-op'
     > &
       Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    Strategic_Business_Outcomes: Schema.Attribute.Component<
-      'strategic-business-outcomes.strategic-business-outcomes',
+    progress: Schema.Attribute.Component<
+      'progress-section.progress-section',
       false
     >;
-    tech_manage: Schema.Attribute.Component<
+    publishedAt: Schema.Attribute.DateTime;
+    Result_section: Schema.Attribute.Component<
       'title-subtile.title-subtitle',
+      false
+    >;
+    Strategic_Business_Outcomes: Schema.Attribute.Component<
+      'strategic-business-outcomes.strategic-business-outcomes',
       false
     >;
     updatedAt: Schema.Attribute.DateTime;
@@ -813,13 +813,13 @@ export interface ApiPlatformProductEngineeringPlatformProductEngineering
       'number-growth.number-growth',
       true
     >;
+    progress: Schema.Attribute.Component<
+      'progress-section.progress-section',
+      false
+    >;
     publishedAt: Schema.Attribute.DateTime;
     Result_section: Schema.Attribute.Component<
       'title-subtile.title-subtitle',
-      false
-    >;
-    Strategic_Excellences: Schema.Attribute.Component<
-      'progress-section.progress-section',
       false
     >;
     updatedAt: Schema.Attribute.DateTime;

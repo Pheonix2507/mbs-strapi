@@ -16,14 +16,9 @@
       "component": "section.hero",
       "repeatable": false
     },
-    "Pillar": {
+    "progress": {
       "type": "component",
       "component": "progress-section.progress-section",
-      "repeatable": false
-    },
-    "banner": {
-      "type": "component",
-      "component": "title-subtile-button-image.title-subtitle-button-image",
       "repeatable": false
     },
     "Strategic_Business_Outcomes": {
@@ -31,10 +26,15 @@
       "component": "strategic-business-outcomes.strategic-business-outcomes",
       "repeatable": false
     },
-    "Engineering_the_Future": {
+    "Result_section": {
       "type": "component",
       "component": "title-subtile.title-subtitle",
-      "repeatable": true
+      "repeatable": false
+    },
+    "banner": {
+      "type": "component",
+      "component": "title-subtile-button-image.title-subtitle-button-image",
+      "repeatable": false
     }
   }
 }
