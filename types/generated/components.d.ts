@@ -259,6 +259,10 @@ export interface TitleSubtileTitleSubtitle extends Struct.ComponentSchema {
     displayName: 'title_subtitle';
   };
   attributes: {
+    background_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     sub_title: Schema.Attribute.String;
     swipe_element: Schema.Attribute.Component<
       'title-subtile.swipe-element',

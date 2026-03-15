@@ -11,6 +11,16 @@
     "sub_title": {
       "type": "string"
     },
+    "background_image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "swipe_element": {
       "type": "component",
       "component": "title-subtile.swipe-element",
